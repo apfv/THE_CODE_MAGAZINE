@@ -1,0 +1,409 @@
+* {
+    /* border-top: 10px solid #1098ad; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    border-top: 10px solid #1098ad;
+    font-family: sans-serif;
+    color: #444;
+    /* برای لایک */
+    position: relative;
+}
+
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-header {
+    background-color: #f7f7f7;
+    /* background-color: red; */
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    /* padding: 20px 40px; */
+    
+    margin-bottom: 60px;
+}
+
+h1,
+h2,
+h3 {
+    color: #1098ad;
+}
+
+h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+
+/* قابلیت خاص شبه انتخابگر */
+
+h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.post-hader {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+/* استفاده از انتخابگر بعدی در اچ دو برای استایل دادن */
+
+h2::after {
+    content: "TOP";
+    color: black;
+    background-color: yellow;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    right: -25px;
+    top: -10px;
+}
+
+
+/* article header p {
+    font-style: italic;
+} */
+
+#author {
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+/* 
+.author-img {
+    float: left;
+    margin-bottom: 20px;
+} 
+*/
+
+.post-img {
+    width: 100%;
+    height: auto;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+ul,
+ol {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 20px;
+    margin: 15px;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+
+/* li:nth-child(2) {
+    color: red;
+} */
+
+article {
+    margin-bottom: 60px;
+}
+
+aside {
+    background-color: #f7f7f7;
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
+    padding: 50px 40px;
+}
+
+
+/* footer p {
+    font-size: 16px;
+} */
+
+.related-author {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+
+/* ul {
+    list-style: none;
+} */
+
+.related {
+    list-style: none;
+    margin-left: 0;
+}
+
+
+/* کار نمی کند چون اولین پارا گراف articl در  header است. */
+
+
+/* article p:first-child {
+    color: red;
+} */
+
+
+/* هایپر لینک کردن لینک ها */
+
+
+/* در حالت عادی که لین است و تگ hrf را دارد. */
+
+a:link {
+    color: #1098ad;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* زمان ملاقات */
+
+a:visited {
+    color: #1098ad;
+}
+
+
+/* زمان امدن موس بر روی لینک */
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline orangered;
+    background-color: #e6e5e5;
+}
+
+
+/* در زمان کلیک */
+
+a:active {
+    color: green;
+    text-decoration: underline green;
+    font-style: italic;
+}
+
+
+/* LVHA */
+
+nav a:link {
+    font-size: 18px;
+    margin-right: 30px;
+    /* margin-top: 10px; */
+    display: inline-block;
+}
+
+nav a:link:last-child {
+    margin-right: 0;
+}
+
+#Copyright {
+    font-size: 16px;
+}
+
+
+/* #Copyright {
+    color: red;
+}
+
+.Copyright {
+    color: blue;
+}
+
+.text {
+    color: green;
+}
+
+footer p {
+    color: yellow;
+} */
+
+button {
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+
+/* Floats */
+
+
+/* .author {
+    padding-left: 80px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+} */
+
+
+/* Flot */
+
+
+/*
+ h1 {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+
+/* اتفاق نیا فتاد برای من */
+
+
+/* روش قدیمی */
+
+
+/* .clear {
+    clear: both;
+} */
+
+
+/* روش درست */
+
+
+/*  */
+
+
+/* 
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+article {
+    width: 825px;
+    float: left;
+}
+
+aside {
+    width: 300px;
+    float: right;
+}
+
+footer {
+    clear: both;
+}
+ */
+
+.RA {
+    border-radius: 10px;
+    border: 1px solid #e6e5e5;
+    background-color: #e6e5e5;
+    padding: 10px;
+}
+
+
+/* flex-box */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-box {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.author {
+    align-self: center;
+}
+
+.related-post {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.related-author {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+}
+
+.related-link:link {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+/*
+article {
+    flex: 0 0 825px;
+}
+
+aside {
+    flex: 0 0 300px;
+    align-self: flex-start;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+} 
+*/
+
+.container {
+    display: grid;
+
+    grid-template-columns: 1fr 300px;
+    
+    column-gap: 75px;
+}
+
+.main-header {
+    grid-column: 1 / span 2;
+}
+
+aside {
+    align-self: start;
+}
